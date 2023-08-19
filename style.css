@@ -1,0 +1,19 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  /* color */
+  -- textL: #f9faf8;
+  -- textD: #1f2937;
+  -- textM: #1f2937;
+  -- CTA: #3882f6;
+  -- background-dark: #1f2937;
+  -- background-mid: #e4e7eb;
+  -- background-light: #f6fbf4;
+  /* size */
+  -- header: 3rem;
+  -- text:  1.125rem;
+  -- subheader: 1.5rem;
+  -- info: 2.25rem;
+}
