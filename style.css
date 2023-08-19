@@ -1,20 +1,83 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  /* color */
+  --textL: #f9faf8;
+  --textD: #1f2937;
+  --textM: #1f2937;
+  --CTA: #3882f6;
+  --background-dark: #1f2937;
+  --background-mid: #e4e7eb;
+  --background-light: #f6fbf4;
+  /* size */
+  --header: 3rem;
+  --text: 1.125rem;
+  --subheader: 1.5rem;
+  --info: 2.25rem;
+  --font: "Atkinson Hyperlegible", sans-serif;
+}
+
+* {
   box-sizing: border-box;
 }
 
-:root{
-  /* color */
-  -- textL: #f9faf8;
-  -- textD: #1f2937;
-  -- textM: #1f2937;
-  -- CTA: #3882f6;
-  -- background-dark: #1f2937;
-  -- background-mid: #e4e7eb;
-  -- background-light: #f6fbf4;
-  /* size */
-  -- header: 3rem;
-  -- text:  1.125rem;
-  -- subheader: 1.5rem;
-  -- info: 2.25rem;
+html {
+  background-color: var(--background-light);
+  color: var(--textD);
+  font-family: var(--font);
+}
+/* genareal stuff */
+h1 {
+  font-size: var(--header);
 }
 
+h2 {
+  font-size: var(--subheader);
+  font-size: var(--subheader);
+}
+
+p {
+  font-size: var(--text);
+}
+
+ul {
+  list-style: none;
+}
+
+/* header */
+header {
+  background-color: var(--background-dark);
+  color: var(--textL);
+}
+
+/* hero */
+.hero {
+  background-color: var(--background-dark);
+  color: var(--textL);
+}
+
+/* info */
+.info {
+}
+
+/* qote */
+.quote {
+  background-color: var(--background-mid);
+  color: var(--textM);
+}
+
+.quote p {
+  font-size: var(--subheader);
+}
+
+/* call to action */
+.ctabox {
+  background-color: var(--CTA);
+  color: var(--textL);
+}
+
+/* footer */
+footer {
+  background-color: var(--background-dark);
+  color: var(--textL);
+}
