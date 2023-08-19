@@ -20,24 +20,32 @@
 * {
   box-sizing: border-box;
 }
+/* genareal stuff */
 
 html {
   background-color: var(--background-light);
   color: var(--textD);
   font-family: var(--font);
 }
-/* genareal stuff */
+
+body {
+  margin: 0;
+}
+
 h1 {
   font-size: var(--header);
 }
 
 h2 {
   font-size: var(--subheader);
-  font-size: var(--subheader);
 }
 
 p {
   font-size: var(--text);
+  margin: 0;
+}
+h3 {
+  margin: 0;
 }
 
 ul {
@@ -48,36 +56,79 @@ ul {
 header {
   background-color: var(--background-dark);
   color: var(--textL);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  gap: 1rem;
 }
 
 /* hero */
 .hero {
   background-color: var(--background-dark);
   color: var(--textL);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+.hero h1,
+.hero p {
+  margin: 0 3rem 1rem 0;
 }
 
-/* info */
+/* info cards */
 .info {
+  text-align: center;
+}
+
+.flexbo {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.infocard div {
+  outline: solid 2px var(--CTA);
+  width: 4rem;
+  height: 4rem;
 }
 
 /* qote */
 .quote {
   background-color: var(--background-mid);
   color: var(--textM);
+  text-align: center;
 }
 
 .quote p {
   font-size: var(--subheader);
+  margin: 0;
 }
 
 /* call to action */
 .ctabox {
-  background-color: var(--CTA);
   color: var(--textL);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 6rem;
+}
+
+.center {
+  background-color: var(--CTA);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+  flex: 0 1 auto;
+  width: 50vh;
 }
 
 /* footer */
 footer {
   background-color: var(--background-dark);
   color: var(--textL);
+  text-align: center;
 }
