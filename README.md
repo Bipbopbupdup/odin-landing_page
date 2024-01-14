@@ -13,7 +13,7 @@ made with **HTML** and **CSS** implementing my new learned **Flexbox** knowledge
 
 ## Links
 
-<!-- - [live preview](https://bipbopbupdup.github.io/odin-recipes/) -->
+- [live preview](https://bipbopbupdup.github.io/odin-landing_page/)
 
 - link to the [Assignment](https://www.theodinproject.com/lessons/foundations-landing-page)
 
