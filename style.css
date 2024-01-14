@@ -12,9 +12,12 @@
   /* size */
   --header: 3rem;
   --text: 1.125rem;
-  --subheader: 1.5rem;
+  --subheader: 2.25rem;
   --info: 2.25rem;
+  --quote: 1.5rem;
   --font: "Atkinson Hyperlegible", sans-serif;
+  /* other */
+  --radius1: 0.4rem;
 }
 
 * {
@@ -33,6 +36,11 @@ body {
   /* display: flex;
   flex: 1;
   flex-direction: column; */
+}
+img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius1);
 }
 
 h1 {
@@ -90,6 +98,9 @@ header img {
 .hero p {
   margin: 0 3rem 1rem 0;
 }
+.hero img {
+  width: 40%;
+}
 
 /* info cards */
 .info {
@@ -113,24 +124,32 @@ header img {
   flex: 1;
 }
 
-.infocard div {
-  outline: solid 2px var(--CTA);
-  width: 7rem;
-  height: 7rem;
+.infocard img {
+  /* border: solid 1px red; */
+  aspect-ratio: 4/3;
 }
 
 /* qote */
 .quote {
   background-color: var(--background-mid);
   color: var(--textM);
-  text-align: center;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
 }
 
 .quote p {
-  font-size: var(--subheader);
-  margin: 0;
+  font-size: var(--quote);
+  margin: 0 6rem;
+  text-align: left;
+  font-style: italic;
 }
 
+.quote :nth-child(2) {
+  text-align: right;
+}
 /* call to action */
 .ctabox {
   color: var(--textL);
