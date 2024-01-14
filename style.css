@@ -18,6 +18,7 @@
   --font: "Atkinson Hyperlegible", sans-serif;
   /* other */
   --radius1: 0.4rem;
+  --radius2: 2rem;
 }
 
 * {
@@ -33,9 +34,6 @@ html {
 
 body {
   margin: 0;
-  /* display: flex;
-  flex: 1;
-  flex-direction: column; */
 }
 img {
   width: 100%;
@@ -65,6 +63,26 @@ ul {
 a {
   text-decoration: none;
   color: var(--textL);
+}
+a:hover {
+  font-weight: 700;
+}
+
+.button {
+  /* border: var(--background-light) solid 0.12rem; */
+  border-radius: var(--radius2);
+  padding: 0.2rem 1rem;
+  background-color: var(--background-dark);
+  color: var(--background-light);
+  font-weight: 700;
+}
+.hero .button {
+  background-color: #3882f6;
+}
+
+.button:hover {
+  color: var(--background-dark);
+  background-color: var(--background-light);
 }
 
 /* header */
@@ -167,6 +185,7 @@ header img {
   padding: 1rem;
   flex: 0 1 auto;
   width: 50vh;
+  border-radius: var(--radius1);
 }
 
 /* footer */
@@ -174,4 +193,5 @@ footer {
   background-color: var(--background-dark);
   color: var(--textL);
   text-align: center;
+  padding: 2rem 5rem;
 }
