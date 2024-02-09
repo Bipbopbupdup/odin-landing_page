@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  block-size: auto;
+  object-fit: contain;
+}
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+
+}
+
 :root {
   /* color */
   --textL: #f9faf8;
@@ -11,10 +33,10 @@
   --background-light: #f6fbf4;
   /* size */
   --header: 3rem;
-  --text: 1.125rem;
+  --text: 1.6rem;
   --subheader: 2.25rem;
   --info: 2.25rem;
-  --quote: 1.5rem;
+  --quote: 1.7rem;
   --font: "Atkinson Hyperlegible", sans-serif;
   /* other */
   --radius1: 0.4rem;
@@ -71,7 +93,7 @@ a:hover {
 .button {
   /* border: var(--background-light) solid 0.12rem; */
   border-radius: var(--radius2);
-  padding: 0.2rem 1rem;
+  padding: 0.7rem 2rem;
   background-color: var(--background-dark);
   color: var(--background-light);
   font-weight: 700;

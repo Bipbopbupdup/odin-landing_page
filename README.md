@@ -1,6 +1,6 @@
 # odin-landing_page
 
-![landingpage sreenshot](./img/index.png)
+![landingpage sreenshot](5-repos/odin-landing_page/img/index.png)
 
 ## Description
 
